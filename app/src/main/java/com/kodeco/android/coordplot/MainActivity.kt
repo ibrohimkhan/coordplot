@@ -10,8 +10,13 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.Slider
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -36,15 +41,21 @@ fun PlotSurface() {
         modifier = Modifier.fillMaxSize(),
         color = Color.White
     ) {
-        // TODO Build out the plot surface
-        //  This should include a Column composable that
-        //  includes a Map, and two MapSlider composables
-        //  (one slider for each axis).
+        var xPercentage by remember { mutableFloatStateOf(0.5f) }
+        var yPercentage by remember { mutableFloatStateOf(0.5f) }
+
         Column {
-            Map(0f, 0f)
+            Map(xPercentage, yPercentage)
+            Slider(
+                value = xPercentage,
+                onValueChange = { xPercentage = it }
+            )
+            Slider(
+                value = yPercentage,
+                onValueChange = { yPercentage = it }
+            )
         }
     }
-
 }
 
 @Preview(showBackground = true)
