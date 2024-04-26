@@ -7,10 +7,11 @@ app is to get familiar with utilizing a fairly new project as well as building C
 - Entering X and Y values to change object position
 - Surviving app state on device configuration change
 - Vertical scrolling in landscape mode to fit all UI controls
+- Supporting Splash screen
 
 ### Changes done
 - Applied code organisation _(screens and components)_
 - Added `Image` composable instead of `Circle`
 - Created `PlotSurfaceScreen` and `MapSlider` composables
 - Updated Color, Typography and Theme, utilized _material-theme-builder_ tool
-
+- Added `core-splashscreen` dependency to add `SplashScreen` in app
