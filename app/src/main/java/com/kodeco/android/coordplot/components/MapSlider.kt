@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -29,6 +30,7 @@ fun MapSlider(
     ) {
         Text(
             text = title,
+            style = MaterialTheme.typography.titleMedium,
             modifier = Modifier
                 .padding(start = 8.dp)
                 .width(120.dp)
