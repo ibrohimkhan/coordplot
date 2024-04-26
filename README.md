@@ -10,7 +10,7 @@ app is to get familiar with utilizing a fairly new project as well as building C
 
 ### Changes done
 - Applied code organisation _(screens and components)_
-- Added Image composable instead of Circle
-- Created PlotSurfaceScreen and MapSlider composables
+- Added `Image` composable instead of `Circle`
+- Created `PlotSurfaceScreen` and `MapSlider` composables
 - Updated Color, Typography and Theme, utilized _material-theme-builder_ tool
 
