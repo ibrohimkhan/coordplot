@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.kodeco.android.coordplot.R
 import com.kodeco.android.coordplot.components.Map
 import com.kodeco.android.coordplot.components.MapSlider
-import com.kodeco.android.coordplot.ui.theme.MyApplicationTheme
+import com.kodeco.android.coordplot.ui.theme.AppTheme
 
 @Composable
 fun PlotSurfaceScreen() {
@@ -48,10 +48,18 @@ fun PlotSurfaceScreen() {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun PlotSurfaceScreenPreview() {
-    MyApplicationTheme {
+    AppTheme {
+        PlotSurfaceScreen()
+    }
+}
+
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun PlotSurfaceScreenDarkPreview() {
+    AppTheme(darkTheme = true) {
         PlotSurfaceScreen()
     }
 }
