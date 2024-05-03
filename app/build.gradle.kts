@@ -25,6 +25,7 @@ android {
     buildTypes {
         debug {
             isMinifyEnabled = false
+            applicationIdSuffix = ".debug"
         }
         release {
             isMinifyEnabled = true
@@ -71,4 +72,7 @@ dependencies {
     implementation(libs.bundles.compose.ui)
     implementation(libs.bundles.androidx.activity)
     implementation(libs.fonts)
+
+    // Splash API
+    implementation(libs.androidx.core.splashscreen)
 }

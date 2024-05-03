@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="x_axis">X axis: %1$d%%</string>
+    <string name="y_axis">Y axis: %1$d%%</string>
 </resources>
